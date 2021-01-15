@@ -11,52 +11,52 @@ const painters = [
   ];
   
   // 1. give list of painters that were born in the 19 century
-//   const painterList = painters.filter(painter => painter.born < 1900);
-//   console.table(painterList)
+  // const painterList = painters.filter(painter => painter.born < 1900);
+  // console.table(painterList)
 
 
   // 2. give list of painters names and last names 
 
-//   let newArray = painters.map(painter => {
-//     return {
-//         name: painter.name,
-//         last: painter.lastName
-//      }
-//     })
-//     console.log(newArray)
+  // let newArray = painters.map(painter => {
+  //   return {
+  //       name: painter.name,
+  //       last: painter.lastName
+  //    }
+  //   })
+  //   console.log(newArray)
     
 
   // 3. sort painters alphabetically by last names
 
-//   let sortedArray = painters.sort((a,b) => (a.lastName > b.lastName) ? 1 : -1) //ternary
+  // let sortedArray = painters.sort((a,b) => (a.lastName > b.lastName) ? 1 : -1) //ternary
 
-//   console.log(sortedArray)
+  // console.log(sortedArray)
 
   // 4. give list of painters that names or last names start with K?
   
-//   const namesK = painters.filter(painter => painter.name.startsWith('K') || painter.lastName.startsWith('K') );
+  // const namesK = painters.filter(painter => painter.name.startsWith('K') || painter.lastName.startsWith('K') );
 
-//   console.log(namesK);
+  // console.log(namesK);
 
 
   // 5. print names of painters that that are still alive
   // and their current age
 
-//   const isAlive = painters.filter (painter => !painter.passed)
+  // const isAlive = painters.filter (painter => !painter.passed)
 
-//   const theirAge = isAlive.map (artist => { 
-//     //var today = new Date().getFullYear()
-//     var age = new Date().getFullYear() - artist.born
-//     return `${artist.name} is ${age}`
-//   })
-//   console.log(theirAge)
+  // const theirAge = isAlive.map (artist => { 
+  //   //var today = new Date().getFullYear()
+  //   var age = new Date().getFullYear() - artist.born
+  //   return `${artist.name} is ${age}`
+  // })
+  // console.log(theirAge)
 
   
   // 6. give list of painters that contain 'li' in their last name 
 
-//   const namesLi = painters.filter(painter => painter.lastName.includes('li') );
+  //  const namesLi = painters.filter(painter => painter.lastName.includes('li') );
 
-//     console.log(namesLi);
+  //   console.log(namesLi);
   
 
   // 7. sort painters by birth date, from oldest to youngest
@@ -68,14 +68,14 @@ const painters = [
 // 8. give list of strings of artists and their age when died or current if still alive
  // ex: 'Gustav Klimt was 56 when passed', 'Kara Walker is 52'
 
- let newPainters = painters.map(painter => {
-    if (painter.passed == true){
-        `${painters.name} ${painters.lastName} was ${age} when passed`
-    } else{
-        `${painters.name} ${painters.lastName} is ${age}`
-    }
-        })
-        console.log(newPainters)
+//  let newPainters = painters.map(painter => {
+//     if (painter.passed == true){
+//         `${painters.name} ${painters.lastName} was ${age} when passed`
+//     } else{
+//         `${painters.name} ${painters.lastName} is ${age}`
+//     }
+//         })
+//         console.log(newPainters)
 
 
 
