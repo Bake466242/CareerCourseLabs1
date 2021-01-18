@@ -1,4 +1,7 @@
 
+console.log('Welcome to our Currency Exchange!')
+//const readline = require('readline');
+
 
 function convertCurr(num, currency){
     if(currency == 'USD'){
@@ -29,5 +32,13 @@ return `Euro: ${num} , usd: ${usd}, yen: ${yen}, pound: ${pounds}, rupees: ${rup
     return `We don't exchange that currency`
 }
 }
-
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+//   });
+  
+//   rl.question('What currency type do you have? ', (convertCurr) => {
+//     console.log(convertCurr);
+//     rl.close();
+//   });
 console.log(convertCurr(9, 'rupees'))
