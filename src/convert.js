@@ -1,6 +1,5 @@
 
 console.log('Welcome to our Currency Exchange!')
-//const readline = require('readline');
 
 
 function convertCurr(num, currency){

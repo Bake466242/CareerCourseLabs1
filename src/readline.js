@@ -1,37 +1,10 @@
-// const readline = require('readline');
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-//   prompt: 'What kind of currency do you have?> '
-// });
-
-// rl.prompt();
-
-// rl.on('line', (line) => {
-//   switch (line.trim()) {
-//     case 'rupees':
-//       console.log('world!');
-//       break;
-//     case 'hello':
-//       console.log('world!');
-//       break;
-//     default:
-//       console.log(`Say what? I might have heard '${line.trim()}'`);
-//       break;
-//   }
-//   rl.prompt();
-// }).on('close', () => {
-//   console.log('Have a great day!');
-//   process.exit(0);
-// });
-
 const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
+console.log('Welcome to our Currency Exchange!')
 rl.question('Please enter your currency type: ', (currency) => {
     rl.question('Please enter how much you have : ', (num) => {
     
