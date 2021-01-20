@@ -6,14 +6,15 @@
  
 // //destructure
 // const {doSomething, ...} = require('./funclist.js')
-const { getRecipe, printRecipe } = require('./helpers/friends')
+
 // const myCoffee = 'Latte'
 // const myRecipe = getRecipe(myCoffee)
 // printRecipe(myCoffee, myRecipe)
-
+const { getRecipe, printRecipe } = require('./helpers/friends')
 const myCoffee = process.argv[2] || 'Latte'
-const myRecipe = getRecipe(myCoffee)
-printRecipe(myCoffee, myRecipe)
+getRecipe(myCoffee, myRecipe => {
+    printRecipe(myCoffee, myRecipe)
+})
 
 
 

@@ -1,0 +1,4 @@
+#npm libraries
+/node_modules
+#firebase credentials
+db-coffee-becca-firebase-adminsdk-14znt-8ee3a77c14.json
